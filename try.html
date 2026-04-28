@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NGH Admin Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/dashboard.css" rel="stylesheet">
+
+<style>
+
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h4>NGH Admin</h4>
+  <a href="#">Dashboard</a>
+  <a href="#">Stock</a>
+  <a href="#">POS</a>
+  <a href="#">Sales</a>
+  <a href="#">Suppliers</a>
+  <a href="#">Deposits</a>
+  <a href="#">Reports</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+  <!-- TOP BAR -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h3>Dashboard</h3>
+    <span>Admin</span>
+  </div>
+
+  <!-- KPI CARDS -->
+  <div class="row g-3">
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow-sm">
+        <h6>Total Stock Value</h6>
+        <h4>UGX 8,500,000</h4>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow-sm">
+        <h6>Today's Sales</h6>
+        <h4>UGX 450,000</h4>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow-sm">
+        <h6>Suppliers</h6>
+        <h4>12</h4>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow-sm">
+        <h6>Deposits</h6>
+        <h4>UGX 2,300,000</h4>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECOND ROW -->
+  <div class="row mt-4">
+
+    <!-- SALES TABLE -->
+    <div class="col-md-6">
+      <div class="card p-3 shadow-sm">
+        <h5>Recent Sales</h5>
+        <table class="table table-sm">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Qty</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cement</td>
+              <td>5</td>
+              <td>160,000</td>
+            </tr>
+            <tr>
+              <td>Iron Bars</td>
+              <td>10</td>
+              <td>300,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- LOW STOCK -->
+    <div class="col-md-6">
+      <div class="card p-3 shadow-sm">
+        <h5>Low Stock Alerts</h5>
+        <table class="table table-sm">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Qty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-danger">
+              <td>Nails</td>
+              <td>5</td>
+            </tr>
+            <tr class="text-danger">
+              <td>Paint</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CHART -->
+  <div class="card mt-4 p-3 shadow-sm">
+    <h5>Sales Overview</h5>
+    <canvas id="salesChart"></canvas>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+// Sample chart
+const ctx = document.getElementById('salesChart');
+
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+    datasets: [{
+      label: 'Sales',
+      data: [200000, 300000, 250000, 400000, 350000],
+      borderWidth: 2
+    }]
+  }
+});
+</script>
+
+</body>
+</html>

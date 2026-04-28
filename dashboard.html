@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>HOMEPAGE</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/mdb.min.css" />
+    <link rel="stylesheet" href="/nyondo.css">
+  </head>
+
+
+  <body>
+ 
+  <div
+    id="intro-example"
+    class="p-5 text-center bg-image" style="background-image: url('https://images.pexels.com/photos/4312849/pexels-photo-4312849.jpeg');">
+
+  <!-- BACKGROUD IMAGE -->
+    <div class="mask mask-custom" style="background-color: rgba(25, 12, 36, 0.7);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+       
+<!-- SIDEBAR -->
+<div class="col-md-4 col-lg-2 bg-light p-4 vh-150 row d-grid gap-4 ">
+    <br>
+     <div class ="logo bg-white p-4 rounded shadow mx-auto"></div>
+ 
+  <a href="#"class="btn btn-outline-primary">Dashboard</a>
+  <a href="#" class="btn btn-outline-primary">Stock</a>
+  <a href="#"class="btn btn-outline-primary">POS</a>
+  <a href="#"class="btn btn-outline-primary">Sales</a>
+  <a href="#"class="btn btn-outline-primary">Suppliers</a>
+  <a href="#" class="btn btn-outline-primary">Deposits</a>
+  <a href="#" class="btn btn-outline-primary">Reports</a>
+  <a href="#" class="btn btn-outline-primary">transport</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main container-fluid p-4 border-end vh-100">
+  <!-- TOP NAV -->
+  <div class="d-flex justify-content-between align-items-center mb-4 bg-white">
+    <h3>Dashboard</h3>
+    <button class="fw-bold">logout</button>
+  </div>
+
+  <!-- KPI CARDS -->
+  <div class="row g-3">
+    <div class="col-md-3">
+      <div class="card p-3 shadow-sm">
+        <h6>Total Stock Value</h6>
+        <h4>UGX 8,500,000</h4>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow-sm">
+        <h6>Today's Sales</h6>
+        <h4>UGX 450,000</h4>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow-sm">
+        <h6>Suppliers</h6>
+        <h4>12</h4>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow-sm">
+        <h6>Deposits</h6>
+        <h4>UGX 2,300,000</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABLES -->
+  <div class="row mt-4">
+
+    <!-- SALES -->
+    <div class="col-md-6">
+      <div class="card p-3 shadow-sm">
+        <h5>Recent Sales</h5>
+        <table class="table table-sm">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Qty</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cement</td>
+              <td>5</td>
+              <td>160,000</td>
+            </tr>
+            <tr>
+              <td>Iron Bars</td>
+              <td>10</td>
+              <td>300,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- LOW STOCK -->
+    <div class="col-md-6">
+      <div class="card p-3 shadow-sm">
+        <h5>
+             <a href=""><i class="fas fa-bell text-danger"> </i></a>Low Stock Alerts
+            </h5>
+        <table class="table table-sm">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Qty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-danger">
+              <td>Nails</td>
+              <td>5</td>
+            </tr>
+            <tr class="text-danger">
+              <td>Paint</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CHART -->
+  <div class="card mt-4 p-3 shadow-sm">
+    <h5>Sales Overview</h5>
+    <canvas id="salesChart" height="100"></canvas>
+  </div>
+
+</div>
+    </div>
+  </div>
+  <!-- Background image -->
+
+
+
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
+
+
